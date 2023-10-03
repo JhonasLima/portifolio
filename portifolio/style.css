@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+*{
+   margin: 0px;
+   padding: 0px; 
+}
+
+header.header{
+    background-color: aqua;
+    width: 100vw;
+    height: 150px;
+    position: absolute;
+}
+
+header > div.header_content > div.header_img{
+    background-color: rgb(125, 125, 221);
+    width: 100px;
+    padding: 15px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
