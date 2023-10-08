@@ -15,15 +15,29 @@
     <header>
         <nav class="nav-bar">
             <div class="logo">
-                <img src="foto-adulto-H.png" alt="Foto">
-                <h1><strong>Jhonas de Lima Barbosa</strong></h1>
+                <div><img src="foto-adulto-H.png" alt="Foto"></div>
+                <div>
+                    <h1><strong>Jhonas de Lima Barbosa</strong></h1>
+                </div>
             </div>
-
-            <div class="menu">
+            <span class="material-symbols-outlined" id="icon-menu"  onclick="clickMenu()">
+                menu
+            </span>
+            <div class="menu" id="menu">
                 <ul>
-                    <li><a href="#">INICIO</a></li>
-                    <li><a href="#">PROJETOS</a></li>
-                    <li><a href="#">CONHECIMENTOS</a></li>
+                    <li><a href="#"><span class="material-symbols-outlined">
+                                home
+                            </span>INICIO</a></li>
+                    <li><a href="#">
+                        <span class="material-symbols-outlined">
+                            menu_book
+                            </span>CONHECIMENTOS</a></li>
+                    <li><a href="#"><span class="material-symbols-outlined">
+                        handyman
+                        </span>PROJETOS</a></li>
+                    <li><a href="#"><span class="material-symbols-outlined">
+                        alternate_email
+                        </span>CONTATOS</a></li>
                 </ul>
             </div>
         </nav>
@@ -34,6 +48,7 @@
     <footer>
 
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
