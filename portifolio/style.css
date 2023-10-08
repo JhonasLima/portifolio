@@ -42,7 +42,7 @@ header {
 
 
 .menu {
-    width: 50%;
+    width: 55%;
     font-weight: bolder;
     display: none;
     justify-content: center;
@@ -87,5 +87,5 @@ span#icon-menu:hover {
 .menu>ul>li>a>span {
     position: relative;
     top: 5px;
-    padding-right: 3px;
+    padding-right: 5px;
 }
