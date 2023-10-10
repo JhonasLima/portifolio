@@ -7,6 +7,19 @@
     box-sizing: border-box;
 }
 
+
+body {
+    background-image: linear-gradient(to top, #4e07b9 60%, #1b043e);
+    height: 100vw;
+}
+
+main {
+    width: 400px;
+    height: 100%;
+    margin: auto;
+    background-color: white;*/
+}
+
 header {
     height: auto;
     background-color: #35057F;
