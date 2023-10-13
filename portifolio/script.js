@@ -7,6 +7,6 @@ function clickMenu(){
     } else {
         menu.style.display = 'flex'
         icon.innerHTML = "Close"
-        icon.style.border = '2px solid rgba(255, 255, 255, 0.575)'
+        /*icon.style.border = '2px solid rgba(255, 255, 255, 0.575)'*/
     }
 }

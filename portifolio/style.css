@@ -43,7 +43,7 @@ header {
 .logo img {
     width: 80px;
     margin: 2px;
-    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(1px 0px 3px white);
 }
 
 .logo h1 {
@@ -61,34 +61,38 @@ header {
     justify-content: center;
     text-align: center;
     position: absolute;
-    bottom: 39%;
-    background-color: #4e07b9;
+    bottom: 36%;
+    /*background-color: #4e07b9;*/
 }
 
 span#icon-menu {
     display: block;
     color: white;
-    width: 50%;
+    width: 10%;
     font-size: 2em;
     text-align: center;
     font-weight: bolder;
+    background-color: #713fbc;
+    border: 0.5px solid white;
+    border-radius: 10px;
 }
 
 span#icon-menu:hover {
     background-color: rgba(174, 174, 174, 0.27);
-    border-radius: 4%;
-    border: 1px solid rgba(255, 255, 255, 0.575);
+    border-radius: 10px;
 }
 
 .menu>ul>li {
     list-style: none;
-    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.629);
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.636);
     padding: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: #4e07b9;
 }
 
-.menu>ul>li>a:hover {
-    background-color: rgba(174, 174, 174, 0.27);
-    border-radius: 4%;
+.menu>ul>li:hover {
+    background-color: #713fbc;
     border: 1px solid rgba(255, 255, 255, 0.575);
 }
 
