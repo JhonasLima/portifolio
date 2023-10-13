@@ -55,11 +55,14 @@ header {
 
 
 .menu {
-    width: 65%;
+    width: 45%;
     font-weight: bolder;
     display: none;
     justify-content: center;
     text-align: center;
+    position: absolute;
+    bottom: 39%;
+    background-color: #4e07b9;
 }
 
 span#icon-menu {
