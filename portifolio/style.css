@@ -41,8 +41,8 @@ header {
 }
 
 .logo img {
-    width: 80px;
-    margin: 2px;
+    width: 90px;
+    margin: 4px;
     filter: drop-shadow(1px 0px 3px white);
 }
 

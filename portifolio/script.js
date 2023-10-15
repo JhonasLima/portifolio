@@ -9,3 +9,13 @@ function clickMenu(){
         /*icon.style.border = '2px solid rgba(255, 255, 255, 0.575)'*/
     }
 }
+
+function clickImg() {
+    if (imgLogo.style.width == '90px'){
+        imgLogo.style.width = '150px'
+        /*imgLogo.style.position = 'absolute'*/
+    } else {
+        imgLogo.style.width = '90px'
+        imgLogo.style.position = 'relative'
+    }
+}
