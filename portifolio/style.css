@@ -17,7 +17,6 @@ main {
     max-width: 400px;
     height: 100%;
     margin: auto;
-    background-color: white;
 }
 
 header {
@@ -119,6 +118,8 @@ span#icon-menu:hover {
 
 /*-------------- Dados pessais----------------*/
 
-.perfil{
-
+.perfil > ul {
+    list-style: none;
+    padding: 10px;
+    background-color: white;
 }
