@@ -41,12 +41,12 @@ header {
 }
 
 .logo img {
-    width: 90px;
+    width: 85px;
     filter: drop-shadow(1px 0px 3px white);
 }
 
 .logo h1 {
-    font-size: 1.3em;
+    font-size: 1.2em;
     margin: 15px;
     color: white;
     text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.629);
@@ -115,4 +115,10 @@ span#icon-menu:hover {
     position: relative;
     top: 5px;
     padding-right: 5px;
+}
+
+/*-------------- Dados pessais----------------*/
+
+.perfil{
+
 }
