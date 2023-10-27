@@ -13,7 +13,19 @@ function clickMenu() {
 function clickImg() {
     if (imgLogo.style.width == '150px') {
         imgLogo.style.width = '85px'
-    } else {
+    } else { 
         imgLogo.style.width = '150px'
     }
+}
+
+function clickCard() {
+    var elementos = document.querySelectorAll('.conteudoCard')
+    elementos.forEach(function(elemento){
+    if (elemento.style.display == 'block'){
+        elemento.style.display = 'none'
+        containerCard.style.flexDirection = 'row'
+    } else {
+        elemento.style.display = 'block'
+        containerCard.style.flexDirection = 'column'
+    }})
 }
