@@ -20,6 +20,7 @@ function clickImg() {
 
 function clickCard() {
     var elementos = document.querySelectorAll('.conteudoCard')
+    
     elementos.forEach(function(elemento){
     if (elemento.style.display == 'block'){
         elemento.style.display = 'none'
