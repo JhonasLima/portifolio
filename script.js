@@ -20,13 +20,22 @@ function clickImg() {
 
 function clickCard() {
     var elementos = document.querySelectorAll('.conteudoCard')
-    
     elementos.forEach(function(elemento){
-    if (elemento.style.display == 'block'){
-        elemento.style.display = 'none'
-        containerCard.style.flexDirection = 'row'
-    } else {
+        elemento.classList.add('transicao')
+    if (elemento.style.display != 'block'){
         elemento.style.display = 'block'
         containerCard.style.flexDirection = 'column'
+        setTimeout(function()
+        {
+            elemento.style.opacity = 1   
+        }, 2)
+        
+    } else {
+        elemento.style.display = 'none'
+        containerCard.style.flexDirection = 'row'
+        setTimeout(function()
+        {
+            elemento.style.opacity = 0   
+        }, 2)
     }})
 }
