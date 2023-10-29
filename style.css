@@ -138,12 +138,18 @@ section.perfil{
 
 /*------------- Conhecimentos -------------*/
 
+section.conhecimentos{
+    margin: 2px 10px 0px 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+}
+
 .containerCard{
     display: flex;
     flex-direction: row;
-    border-radius: 15px;
-    /*background-color: white;*/
-    margin: 2px 10px 0px 10px;
+    border: 1px solid white;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 .conhecimentos > h1 {
@@ -152,7 +158,8 @@ section.perfil{
     padding: 10px;
     margin-top: 10px;
     background-color: white;
-
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
 }
 
 .card {
