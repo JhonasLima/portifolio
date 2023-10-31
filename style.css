@@ -180,6 +180,7 @@ section.conhecimentos{
 .conteudoCard {
     display: none;
     text-align: center;
+    width: 100%;
     background-color: white;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
     border-radius: 15px;
@@ -189,6 +190,19 @@ section.conhecimentos{
     font-size: 1.2;
     padding: 10px;
 }
+
+.conteudoCard > ul{
+    list-style: inside;
+    overflow: auto;
+}
+
+.conteudoCard > ul > li {
+    font-weight: bolder;
+    text-align: start;
+    padding: 3px 10px 3px 25px ;
+    margin: 3px;
+}
+
 /*--------------------Transições---------------------*/
 .transicao{
     opacity: 0;
