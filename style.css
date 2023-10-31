@@ -189,7 +189,7 @@ section.conhecimentos{
     font-size: 1.2;
     padding: 10px;
 }
-
+/*--------------------Transições---------------------*/
 .transicao{
     opacity: 0;
     transition: opacity 1s ease-in-out;
@@ -197,4 +197,5 @@ section.conhecimentos{
 
 .transicao2 {
     opacity: 1;
+    transition: opacity 1s ease-in-out;
 }

@@ -41,15 +41,16 @@ function clickCard() {
 
                 elemento.style.opacity = 1
 
-            }, 2)
+            }, 500)
 
         } else {
             elemento.style.display = 'none'
             containerCard.style.flexDirection = 'row'
             setTimeout(function () {
                 elemento.style.opacity = 0
-            }, 2)
+            }, 500)
 
         }
     })
 }
+
