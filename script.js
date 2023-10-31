@@ -13,29 +13,43 @@ function clickMenu() {
 function clickImg() {
     if (imgLogo.style.width == '150px') {
         imgLogo.style.width = '85px'
-    } else { 
+    } else {
         imgLogo.style.width = '150px'
     }
 }
 
 function clickCard() {
-    var elementos = document.querySelectorAll('.conteudoCard')
-    elementos.forEach(function(elemento){
-        elemento.classList.add('transicao')
-    if (elemento.style.display != 'block'){
-        elemento.style.display = 'block'
-        containerCard.style.flexDirection = 'column'
-        setTimeout(function()
-        {
-            elemento.style.opacity = 1   
-        }, 2)
-        
+    if (conhecimentos.classList.contains('transicao')){
+        conhecimentos.classList.remove('transicao', 'transicao2')
+        iconConhecimentos.innerHTML = "add"
     } else {
-        elemento.style.display = 'none'
-        containerCard.style.flexDirection = 'row'
-        setTimeout(function()
-        {
-            elemento.style.opacity = 0   
-        }, 2)
-    }})
+        conhecimentos.classList.add('transicao')
+        setTimeout(function(){
+            conhecimentos.classList.add('transicao2')
+        }, 500)
+        iconConhecimentos.innerHTML = "remove"
+    }
+
+    var elementos = document.querySelectorAll('.conteudoCard')
+    elementos.forEach(function (elemento) {
+        elemento.classList.add('transicao')
+        if (elemento.style.display != 'block') {
+            elemento.style.display = 'block'
+            containerCard.style.flexDirection = 'column'
+
+            setTimeout(function () {
+
+                elemento.style.opacity = 1
+
+            }, 2)
+
+        } else {
+            elemento.style.display = 'none'
+            containerCard.style.flexDirection = 'row'
+            setTimeout(function () {
+                elemento.style.opacity = 0
+            }, 2)
+
+        }
+    })
 }
