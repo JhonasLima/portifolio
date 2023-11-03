@@ -65,3 +65,25 @@ function clickCard() {
 
 /*-----------------------------Projetos----------------*/
 
+var projetos = [
+    {nome: "Mascote Android", img: "imagens/ProjetoAndroid.png", descricao: "Projeto android conta um pouco da história de como surgiu o mascote Android. Foi desenvolvido acompanhando o curso de HTML e CSS da plataforma CursoemVideo."
+    , link: "https://jhonaslima.github.io/projeto-android/"},
+    {nome: "Projeto Login", img: "imagens/ProjetoLogin.png", descricao:"test", link: "https://jhonaslima.github.io/projeto-login/index.html"}
+]
+
+var indice = 0
+
+const imgProjeto = document.querySelector("#imagemProjeto")
+const nomeProjeto = document.querySelector("#nomeProjeto")
+const descricaoProj = document.querySelector("#txtdecProjeto")
+
+imgProjeto.src = projetos[indice].img
+nomeProjeto.innerHTML = projetos[indice].nome
+descricaoProj.innerHTML = projetos[indice].descricao
+
+
+function btnPassar() {
+    if(indice < projetos.length -1){
+        indice++
+    }
+}

@@ -268,7 +268,20 @@ section.projetos{
     margin: 0 20px 2px 20px;
 }
 
+.btn-voltar, .btn-passar{
+    margin-top: 10px;
+}
+
+.btn-voltar > span {
+    padding-left: 14px;
+}
+
+.btn-acessar{
+    padding-bottom: 0px;
+}
+
 .btn-navegacao > p {
     margin: 0;
     font-weight: bolder;
+    padding-top: 0px;
 }
