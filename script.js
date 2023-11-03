@@ -40,6 +40,8 @@ function clickCard() {
             elemento.style.display = 'block'
             containerCard.style.flexDirection = 'column'
 
+            document.getElementById('conhecimentos').scrollIntoView({behavior: "smooth", block: "start"})
+
             setTimeout(function () {
                 
                 elemento.style.opacity = 1
@@ -49,7 +51,7 @@ function clickCard() {
         } else {
             elemento.style.display = 'none'
             containerCard.style.flexDirection = 'row'
-            
+
             document.getElementById('conhecimentos').scrollIntoView({behavior: "smooth", block: "center"})
 
             setTimeout(function () {
