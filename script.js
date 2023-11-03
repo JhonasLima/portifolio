@@ -1,5 +1,6 @@
+/*-----------------------------Header----------------------*/
 function clickMenu() {
-    var icon = document.querySelector("#icon-menu")
+    let icon = document.querySelector("#icon-menu")
     if (menu.style.display == 'flex') {
         menu.style.display = 'none'
         icon.innerHTML = "Menu"
@@ -17,6 +18,8 @@ function clickImg() {
         imgLogo.style.width = '150px'
     }
 }
+
+/*-------------------------Conhecimentos-----------------*/
 
 function clickCard() {
     if (conhecimentos.classList.contains('transicao')){
@@ -48,9 +51,12 @@ function clickCard() {
             containerCard.style.flexDirection = 'row'
             setTimeout(function () {
                 elemento.style.opacity = 0
+                document.getElementById("conhecimentos").focus()
             }, 500)
-
+            
         }
     })
 }
+
+/*-----------------------------Projetos----------------*/
 

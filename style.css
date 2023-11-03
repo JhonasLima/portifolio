@@ -15,6 +15,7 @@ body {
 
 main {
     max-width: 400px;
+    min-width: 400px;
     height: 100%;
     margin: auto;
 }
@@ -212,4 +213,62 @@ section.conhecimentos{
 .transicao2 {
     opacity: 1;
     transition: opacity 1s ease-in-out;
+}
+
+/*---------------------Projetos---------------------*/
+
+section.projetos{
+    height: 100%;
+    margin: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    border: 1px solid white;
+}
+
+.containerProjeto > .imgProjeto {
+    width: auto;
+    height: auto;
+    text-align: center;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.containerProjeto > .imgProjeto > img {
+    width: 250px;
+    height: 100%;
+    padding: 10px;
+    filter: drop-shadow(1px 1px 5px black);
+}
+
+.descricaoProjeto {
+    background-color: white;
+    border: 1px solid white;
+    text-align: center;
+}
+
+.descricaoProjeto > p, h1 {
+    font-family: 'Share tech';
+    font-size: 1.3em;
+    text-indent: 15px;
+    padding: 10px;
+}
+
+.navegacao {
+    background-color: white;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.btn-navegacao > span {
+    font-size: 4em;
+    margin: 0 20px 2px 20px;
+}
+
+.btn-navegacao > p {
+    margin: 0;
+    font-weight: bolder;
 }
