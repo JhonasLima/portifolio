@@ -41,7 +41,7 @@ function clickCard() {
             containerCard.style.flexDirection = 'column'
 
             setTimeout(function () {
-
+                
                 elemento.style.opacity = 1
 
             }, 500)
@@ -49,11 +49,14 @@ function clickCard() {
         } else {
             elemento.style.display = 'none'
             containerCard.style.flexDirection = 'row'
-            setTimeout(function () {
-                elemento.style.opacity = 0
-                document.getElementById("conhecimentos").focus()
-            }, 500)
             
+            document.getElementById('conhecimentos').scrollIntoView({behavior: "smooth", block: "center"})
+
+            setTimeout(function () {
+                
+                elemento.style.opacity = 0
+
+            }, 500)
         }
     })
 }
