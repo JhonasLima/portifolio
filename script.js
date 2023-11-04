@@ -65,42 +65,51 @@ function clickCard() {
 
 /*-----------------------------Projetos----------------*/
 
-var indice = -1
 var projetos = [
     {
-        nome: "Mascote Android", img: "imagens/ProjetoAndroid.png", descricao: "Projeto android conta um pouco da história de como surgiu o mascote Android. Foi desenvolvido acompanhando o curso de HTML e CSS da plataforma CursoemVideo."
+        img: "imagens/ProjetoAndroid.png", nome: "Mascote Android", descricao: "Projeto android conta um pouco da história de como surgiu o mascote Android. Foi desenvolvido acompanhando o curso de HTML e CSS da plataforma CursoemVideo."
         , link: "https://jhonaslima.github.io/projeto-android/"
     },
-    { nome: "Projeto Login", img: "imagens/ProjetoLogin.png", descricao: "test", link: "https://jhonaslima.github.io/projeto-login/index.html" },
     {
-        nome: "projeto 3", img: "imagens/ProjetoAndroid.png", descricao: "bla bla", link: "#"
+        img: "imagens/ProjetoLogin.png", nome: "Projeto Login", descricao: "test", link: "https://jhonaslima.github.io/projeto-login/index.html"
+    },
+    {
+        img: "imagens/ProjetoAndroid.png", nome: "projeto 3", descricao: "bla bla", link: "#"
     }
 ]
 
+var indice = 0
+
+window.addEventListener('load', function(){
+    adicionar()
+})
+
 function adicionar() {
+    var imgProjeto = document.querySelector("#imagemProjeto")
+    var nomeProjeto = document.querySelector("#nomeProjeto")
+    var descricaoProj = document.querySelector("#txtdecProjeto")
 
-var imgProjeto = document.querySelector("#imagemProjeto")
-var nomeProjeto = document.querySelector("#nomeProjeto")
-var descricaoProj = document.querySelector("#txtdecProjeto")
-
-imgProjeto.src = projetos[indice].img
-nomeProjeto.innerHTML = projetos[indice].nome
-descricaoProj.innerHTML = projetos[indice].descricao
+    imgProjeto.src = projetos[indice].img
+    nomeProjeto.innerHTML = projetos[indice].nome
+    descricaoProj.innerHTML = projetos[indice].descricao
 }
 
 function btnPassar() {
-    console.log(indice)
-    if (indice <= projetos.length) {
+    if (indice < projetos.length - 1) {
         indice++
+        console.log(indice)
+    } else {
+        indice = 0
     }
     return adicionar()
+
 }
 
 function btnVoltar() {
-    if (indice > 0 ) {
+    if (indice > 0) {
         indice--
-        return adicionar()
-    } /*else {
-        indice = projetos.length
-    }*/
+    } else {
+        indice = projetos.length -1 
+    }
+    return adicionar()
 }
