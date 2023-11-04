@@ -88,10 +88,12 @@ function adicionar() {
     var imgProjeto = document.querySelector("#imagemProjeto")
     var nomeProjeto = document.querySelector("#nomeProjeto")
     var descricaoProj = document.querySelector("#txtdecProjeto")
+    var linkProjeto = document.querySelector("#linkProjeto")
 
     imgProjeto.src = projetos[indice].img
     nomeProjeto.innerHTML = projetos[indice].nome
     descricaoProj.innerHTML = projetos[indice].descricao
+    linkProjeto.href = projetos[indice].link
 }
 
 function btnPassar() {

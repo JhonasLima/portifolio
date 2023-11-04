@@ -10,6 +10,7 @@
 
 
 body {
+    height: auto;
     background-image: linear-gradient(to top, #4907ad 60%, #120329);
 }
 
@@ -218,7 +219,7 @@ section.conhecimentos{
 /*---------------------Projetos---------------------*/
 
 section.projetos{
-    height: 100%;
+    height: auto;
     margin: 10px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
     border-radius: 15px;
@@ -280,7 +281,25 @@ section.projetos{
     padding-bottom: 0px;
 }
 
-.btn-navegacao > p {
+
+.linkProjeto {
+    text-decoration: none;
+}
+
+.linkProjeto:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.linkProjeto > p {
+    margin: 0;
+    font-weight: bolder;
+    padding-top: 0px;
+}
+
+.linkProjeto > span {
+    font-size: 4em;
+    margin: 0 20px 2px 20px;
     margin: 0;
     font-weight: bolder;
     padding-top: 0px;
