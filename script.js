@@ -71,10 +71,13 @@ var projetos = [
         , link: "https://jhonaslima.github.io/projeto-android/"
     },
     {
-        img: "imagens/ProjetoLogin.png", nome: "Projeto Login", descricao: "test", link: "https://jhonaslima.github.io/projeto-login/index.html"
+        img: "imagens/ProjetoLogin.png", nome: "Projeto Login", descricao: "Projeto desenvolvido para aprendizado, aplicando Media Query e validações simples de campos de formulário acompanhando o curso de HTML e CSS do CursoemVideo", link: "https://jhonaslima.github.io/projeto-login/index.html"
     },
     {
-        img: "imagens/ProjetoAndroid.png", nome: "projeto 3", descricao: "bla bla", link: "#"
+        img: "imagens/ProjetoVerificadorIdade.png", nome: "Verficador de Idade", descricao: "Exercicio desenvolvido no Curso de JavaScript da Plataforma CursoemVideo.", link: "https://jhonaslima.github.io/CursoJs/aula12ex/ex015/modelo.html"
+    },
+    {
+        img: "imagens/ProjetoSocial.png", nome: "Projeto Midia Social", descricao: "Projeto desenvolvido com o intuido de aprender modos de trabalhar com iframe, foi desenvolvido acompanhando o curso de HTML e CSS do CursoemVideo", link: "https://jhonaslima.github.io/projeto-social/"
     }
 ]
 
@@ -97,21 +100,39 @@ function adicionar() {
 }
 
 function btnPassar() {
+    var efeitoBtn = document.querySelector("#btn-passar")
     if (indice < projetos.length - 1) {
         indice++
         console.log(indice)
     } else {
         indice = 0
     }
-    return adicionar()
 
+    /* efeito */
+    efeitoBtn.classList.add('transicaoBtn')
+    setTimeout(function(){
+        efeitoBtn.classList.remove('transicaoBtn')
+    }, 150)
+
+    return adicionar()
+    
 }
 
 function btnVoltar() {
+
+    let efeitoBtn = document.querySelector("#btn-voltar")
+
     if (indice > 0) {
         indice--
     } else {
         indice = projetos.length -1 
     }
+
+    /* efeito */
+    efeitoBtn.classList.add('transicaoBtn')
+    setTimeout(function(){
+        efeitoBtn.classList.remove('transicaoBtn')
+    }, 150)
+
     return adicionar()
 }
