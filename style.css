@@ -228,7 +228,7 @@ section.projetos{
 
 .containerProjeto > .imgProjeto {
     width: auto;
-    height: auto;
+    height: 200px;
     text-align: center;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
@@ -242,6 +242,7 @@ section.projetos{
 }
 
 .descricaoProjeto {
+    height: 180px;
     background-color: white;
     border: 1px solid white;
     text-align: center;
