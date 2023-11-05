@@ -277,6 +277,14 @@ section.projetos{
     cursor: pointer;
 }
 
+.btn-voltar:active{
+    background-color: transparent;
+}
+
+.btn-passar:active{
+    background-color: transparent;
+}
+
 .btn-voltar, .btn-passar{
     margin-top: 10px;
 }
