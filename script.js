@@ -12,11 +12,17 @@ function clickMenu() {
 }
 
 function clickImg() {
-    if (imgLogo.style.width == '150px') {
+    if(imgLogo.style.scale == 1.5){
+        imgLogo.style.scale = 1
+    } else {
+        imgLogo.style.scale = 1.5
+    }
+
+    /*if (imgLogo.style.width == '150px') {
         imgLogo.style.width = '85px'
     } else {
         imgLogo.style.width = '150px'
-    }
+    }*/
 }
 
 /*-------------------------Conhecimentos-----------------*/
