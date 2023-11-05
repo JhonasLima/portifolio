@@ -15,8 +15,7 @@ body {
 }
 
 main {
-    max-width: 400px;
-    min-width: 400px;
+    width: clamp(400px, 55%, 900px);
     height: 100%;
     margin: auto;
 }
@@ -138,6 +137,7 @@ section.perfil{
 .perfil > p {
     font-family: 'Share tech';
     font-size: 1.3em;
+    text-align: center;
     text-indent: 15px;
     padding: 10px;
 } 
@@ -154,6 +154,8 @@ section.conhecimentos{
     display: flex;
     /*flex-direction: row;*/
     border: 1px solid white;
+    justify-content: center;
+    padding-right: 0px;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 }
@@ -193,7 +195,7 @@ section.conhecimentos{
 }
 
 .conteudoCard > h1, p {
-    font-size: 1.2;
+    font-size: 1.2em;
     padding: 10px;
 }
 
