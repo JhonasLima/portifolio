@@ -1,6 +1,6 @@
 /*-----------------------------Header----------------------*/
-function clickMenu() {
-    let icon = document.querySelector("#icon-menu")
+function clickMenu() { /*Menu*/
+    let icon = document.querySelector("#iconMenu")
     if (menu.style.display == 'flex') {
         menu.style.display = 'none'
         icon.innerHTML = "Menu"
@@ -10,6 +10,39 @@ function clickMenu() {
         /*icon.style.border = '2px solid rgba(255, 255, 255, 0.575)'*/
     }
 }
+
+
+/*Codigo para manter a o botão menu na tela quando rolar a pagina*/
+function elementoVisivel(el){
+    const rect = el.getBoundingClientRect()
+
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    )
+}
+
+function elementoInvisivel(){
+    var elemento = document.querySelector("#iconMenu")
+
+    if(!elementoVisivel(elemento)){
+        menu.style.top = '36%'
+        menu.style.right = '5%'
+        menu.style.position = 'fixed'
+        menu.style.width = '46%'
+
+        iconMenu.style.top = '50%'
+        iconMenu.style.right = '1%'
+        iconMenu.style.position = 'fixed'
+        iconMenu.style.width = '40px'
+    }
+}
+
+window.addEventListener('scroll', elementoInvisivel)
+
+/*-------------------------------------------------------------------------*/
 
 function clickImg() {
     if(imgLogo.style.scale == 1.5){
