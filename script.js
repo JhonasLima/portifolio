@@ -24,20 +24,22 @@ function elementoVisivel(el){
     )
 }
 
-function elementoInvisivel(){
-    var elemento = document.querySelector("#iconMenu")
 
+function elementoInvisivel(){
+    var elemento = document.querySelector("#divLimite")
     if(!elementoVisivel(elemento)){
-        menu.style.top = '36%'
+        /*menu.style.top = '36%'
         menu.style.right = '5%'
         menu.style.position = 'fixed'
         menu.style.width = '46%'
-
+        
         iconMenu.style.top = '50%'
         iconMenu.style.right = '1%'
         iconMenu.style.position = 'fixed'
-        iconMenu.style.width = '40px'
+        iconMenu.style.width = '40px'*/
+
     }
+
 }
 
 window.addEventListener('scroll', elementoInvisivel)

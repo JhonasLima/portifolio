@@ -69,23 +69,6 @@ header {
     width: auto;
 }
 
-.menu-flutuante {
-    top: 36%;
-    right: 10%;
-    position: fixed;
-    width: 30%;
-    font-weight: bolder;
-    display: none;
-    justify-content: center;
-}
-
-.IconMenu-flutante {
-    top: 50%;
-    right: 1%;
-    position: fixed;
-    width: 40px;
-}
-
 .menu {
     width: 45%;
     font-weight: bolder;
