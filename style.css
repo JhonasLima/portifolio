@@ -46,7 +46,7 @@ header {
     scale: 1;
     margin-top: 10px;
 
-    transition: scale 1s ease-in-out;
+    transition: scale 0.6s ease-in-out;
 }
 
 .logo img:hover {
