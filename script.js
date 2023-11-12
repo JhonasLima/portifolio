@@ -1,16 +1,26 @@
 /*-----------------------------Header----------------------*/
 function clickMenu() { /*Menu*/
     let icon = document.querySelector("#iconMenu")
-    if (menu.style.display == 'flex') {
-        menu.style.display = 'none'
+    if (menuHeader.style.display == 'flex') {
+        menuHeader.style.display = 'none'
         icon.innerHTML = "Menu"
     } else {
-        menu.style.display = 'flex'
+        menuHeader.style.display = 'flex'
         icon.innerHTML = "Close"
-        /*icon.style.border = '2px solid rgba(255, 255, 255, 0.575)'*/
     }
 }
 
+
+/*-------------------------Botão Flutuante---------------*/
+
+function clickMenuFlutuante() { /*Menu*/
+    let icon = document.querySelector("#iconMenu")
+    if (menuFlutuante.style.display == 'flex') {
+        menuFlutuante.style.display = 'none'
+    } else {
+        menuFlutuante.style.display = 'flex'
+    }
+}
 
 /*Codigo para manter a o botão menu na tela quando rolar a pagina*/
 function elementoVisivel(el){
@@ -28,6 +38,7 @@ function elementoVisivel(el){
 function elementoInvisivel(){
     var elemento = document.querySelector("#divLimite")
     if(!elementoVisivel(elemento)){
+        botaoFlutuante.style.display = 'flex'
         /*menu.style.top = '36%'
         menu.style.right = '5%'
         menu.style.position = 'fixed'
@@ -38,6 +49,8 @@ function elementoInvisivel(){
         iconMenu.style.position = 'fixed'
         iconMenu.style.width = '40px'*/
 
+    } else {
+        botaoFlutuante.style.display = 'none'
     }
 
 }
