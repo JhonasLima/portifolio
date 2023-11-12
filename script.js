@@ -41,6 +41,12 @@ function elementoInvisivel(){
     var elemento = document.querySelector("#divLimite")
     if(!elementoVisivel(elemento)){
         botaoFlutuante.style.display = 'flex'
+        menuHeader.style.display = 'none'
+        botaoFlutuante.classList.add('transicaoBtnFlutuante')
+        setTimeout(function(){
+            botaoFlutuante.style.scale = '1'
+        }, 1)
+        
         /*menu.style.top = '36%'
         menu.style.right = '5%'
         menu.style.position = 'fixed'
@@ -52,8 +58,10 @@ function elementoInvisivel(){
         iconMenu.style.width = '40px'*/
 
     } else {
-        botaoFlutuante.style.display = 'none'
         menuFlutuante.style.display = 'none'
+        botaoFlutuante.classList.remove = 'transicaoBtnFlutuante'
+        botaoFlutuante.style.scale = '0'
+        botaoFlutuante.style.transition = 'scale 0.5s ease-in'
     }
 
 }
@@ -97,6 +105,7 @@ function clickCard() {
             elemento.style.display = 'block'
             containerCard.style.flexDirection = 'column'
 
+            /*função de focar no começo da section conhecimentos quando abrir os card*/
             document.getElementById('conhecimentos').scrollIntoView({ behavior: "smooth", block: "start" })
 
             setTimeout(function () {
