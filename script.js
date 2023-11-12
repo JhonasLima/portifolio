@@ -17,8 +17,10 @@ function clickMenuFlutuante() { /*Menu*/
     let icon = document.querySelector("#iconMenu")
     if (menuFlutuante.style.display == 'flex') {
         menuFlutuante.style.display = 'none'
+        iconMenuFlutuante.innerHTML = "Menu"
     } else {
         menuFlutuante.style.display = 'flex'
+        iconMenuFlutuante.innerHTML = "Close"
     }
 }
 
@@ -51,6 +53,7 @@ function elementoInvisivel(){
 
     } else {
         botaoFlutuante.style.display = 'none'
+        menuFlutuante.style.display = 'none'
     }
 
 }
