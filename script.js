@@ -14,7 +14,7 @@ function clickMenu() { /*Menu*/
 /*-------------------------Botão Flutuante---------------*/
 
 function clickMenuFlutuante() { /*Menu*/
-    let icon = document.querySelector("#iconMenu")
+    /*let icon = document.querySelector("#iconMenu")*/
     if (menuFlutuante.style.display == 'flex') {
         menuFlutuante.style.display = 'none'
         iconMenuFlutuante.innerHTML = "Menu"
@@ -39,10 +39,12 @@ function elementoVisivel(el){
 
 function elementoInvisivel(){
     var elemento = document.querySelector("#divLimite")
+    let icon = document.querySelector("#iconMenu")
     if(!elementoVisivel(elemento)){
         botaoFlutuante.style.display = 'flex'
         menuHeader.style.display = 'none'
         botaoFlutuante.classList.add('transicaoBtnFlutuante')
+        icon.innerHTML = 'Menu'
         setTimeout(function(){
             botaoFlutuante.style.scale = '1'
         }, 1)
@@ -61,7 +63,8 @@ function elementoInvisivel(){
         menuFlutuante.style.display = 'none'
         botaoFlutuante.classList.remove = 'transicaoBtnFlutuante'
         botaoFlutuante.style.scale = '0'
-        botaoFlutuante.style.transition = 'scale 0.5s ease-in'
+        botaoFlutuante.style.transition = 'scale 0.3s ease-in'
+        iconMenuFlutuante.innerHTML = "Menu"
     }
 
 }
