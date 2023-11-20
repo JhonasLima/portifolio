@@ -91,7 +91,7 @@ header {
 .menuFlutuante {
     width: auto;
     display: none;
-    top: 15%;
+    top: 97px;
     right: 53px;
     position: fixed;
 }
@@ -117,7 +117,7 @@ span#iconMenu {
     border: 2px solid white;
     box-shadow: 0px 0px 8px white;
     border-radius: 50%;
-    top: 35%;
+    top: 190px;
     right: 1%;
     position: fixed;
     width: 45px;
