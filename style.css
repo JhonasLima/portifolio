@@ -12,6 +12,7 @@
 body {
     height: auto;
     background-image: linear-gradient(to top, #4907ad 60%, #120329);
+    -webkit-tap-highlight-color: transparent;
 }
 
 main {
