@@ -78,13 +78,18 @@ function clickImg() {
         imgLogo.style.scale = 1
         imgLogo.style. transform = 'translate(0)'
 
+        imgLogo.classList.add('blockClick')
+        imgLogo.addEventListener('transitionend', function () {
+            imgLogo.classList.remove('blockClick')
+        }, { once:true })
+
         setTimeout(function(){
             nomePerfil.style.scale = 1
         }, 500)
 
         setTimeout(function(){
             iconMenu.style.scale = 1
-        }, 1500)
+        }, 1000)
 
     } else {
         imgLogo.style.scale = 1.6
@@ -92,6 +97,11 @@ function clickImg() {
         nomePerfil.style.scale = 0
         iconMenu.style.scale = 0
         menuHeader.style.display = 'none'
+
+        imgLogo.classList.add('blockClick')
+        imgLogo.addEventListener('transitionend', function () {
+            imgLogo.classList.remove('blockClick')
+        }, { once:true })
 
     }
 
