@@ -16,7 +16,7 @@ body {
 }
 
 main {
-    width: clamp(400px, 55%, 900px);
+    width: clamp(410px, 55%, 900px);
     height: 100%;
     margin: auto;
 }
@@ -28,6 +28,7 @@ header {
 }
 
 .container-header {
+    width: 400;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
