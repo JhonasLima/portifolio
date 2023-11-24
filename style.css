@@ -42,7 +42,7 @@ header {
 
 .logo img {
     width: clamp(70px, 20vw, 130px);
-    filter: drop-shadow(1px 1px 2px rgb(176, 176, 176));
+    filter: drop-shadow(1px 1px 5px rgb(255, 255, 255));
     scale: 1;
     margin-top: 10px;
     z-index: 1;
