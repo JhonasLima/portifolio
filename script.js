@@ -74,10 +74,16 @@ window.addEventListener('scroll', elementoInvisivel)
 /*-------------------------------------------------------------------------*/
 
 function clickImg() {
-    if(imgLogo.style.scale == 1.5){
+    if(imgLogo.style.scale == 1.6){
         imgLogo.style.scale = 1
+        imgLogo.style. transform = 'translate(0)'
+        setTimeout(function(){
+            nomePerfil.style.scale = 1
+        }, 500)
     } else {
-        imgLogo.style.scale = 1.5
+        imgLogo.style.scale = 1.6
+        imgLogo.style.transform = 'translate(87%, 10px)'
+        nomePerfil.style.scale = 0
     }
 
     /*if (imgLogo.style.width == '150px') {

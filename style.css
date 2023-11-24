@@ -45,8 +45,9 @@ header {
     filter: drop-shadow(1px 1px 2px rgb(176, 176, 176));
     scale: 1;
     margin-top: 10px;
+    z-index: 1;
 
-    transition: scale 0.6s ease-in-out;
+    transition: scale 0.7s ease-in-out, transform 0.7s ease-in-out;
 }
 
 .logo img:hover {
@@ -54,12 +55,15 @@ header {
 }
 
 .logo h1 {
-    font-size: clamp(1.2rem, 2.5vw, 3.5rem);
+    font-size: clamp(1.5rem, 2.8vw, 3.5rem);
     margin: 15px;
     color: white;
     text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.629);
     white-space: nowrap;
+
+    transition: scale 0.6s ease-in-out;
 }
+
 
 .container-menu {
     position: relative;
