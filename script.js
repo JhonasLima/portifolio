@@ -77,13 +77,22 @@ function clickImg() {
     if(imgLogo.style.scale == 1.6){
         imgLogo.style.scale = 1
         imgLogo.style. transform = 'translate(0)'
+
         setTimeout(function(){
             nomePerfil.style.scale = 1
         }, 500)
+
+        setTimeout(function(){
+            iconMenu.style.scale = 1
+        }, 1500)
+
     } else {
         imgLogo.style.scale = 1.6
-        imgLogo.style.transform = 'translate(95%, 10px)'
+        imgLogo.style.transform = 'translate(97%, 10px)'
         nomePerfil.style.scale = 0
+        iconMenu.style.scale = 0
+        menuHeader.style.display = 'none'
+
     }
 
     /*if (imgLogo.style.width == '150px') {
