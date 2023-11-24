@@ -28,7 +28,6 @@ header {
 }
 
 .container-header {
-    width: 400;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -37,8 +36,9 @@ header {
 }
 
 .logo {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 

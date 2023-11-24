@@ -88,7 +88,7 @@ function clickImg() {
 
     } else {
         imgLogo.style.scale = 1.6
-        imgLogo.style.transform = 'translate(97%, 10px)'
+        imgLogo.style.transform = 'translate(100%, 10px)'
         nomePerfil.style.scale = 0
         iconMenu.style.scale = 0
         menuHeader.style.display = 'none'
