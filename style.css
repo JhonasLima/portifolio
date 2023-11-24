@@ -24,7 +24,7 @@ main {
 header {
     width: 100%;
     height: auto;
-    box-shadow: 0px 1px 10px black;
+    /*box-shadow: 0px 1px 10px black;*/
 }
 
 .container-header {
