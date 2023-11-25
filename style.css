@@ -21,7 +21,7 @@ body::-webkit-scrollbar {
 }
 
 main {
-    width: clamp(400px, 50%, 900px);
+    width: clamp(400px, 50%, 900px);/*410*/
     height: 100%;
     margin: auto;
 }
