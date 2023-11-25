@@ -89,7 +89,7 @@ function clickImg() {
 
         setTimeout(function(){
             iconMenu.style.scale = 1
-        }, 1000)
+        }, 900)
 
     } else {
         imgLogo.style.scale = 1.6
