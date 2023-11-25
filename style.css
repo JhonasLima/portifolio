@@ -62,7 +62,7 @@ header {
 }
 
 .logo h1 {
-    font-size: clamp(1.5rem, 2.8vw, 3.5rem);
+    font-size: clamp(1.2rem, 2.8vw, 3.5rem);
     margin: 15px;
     color: white;
     text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.629);
