@@ -216,6 +216,7 @@ section.perfil {
     padding: 5px;
     border-radius: 5px;
     transition: all 0.1s;
+    z-index: 1;
   }
 
 .containerCard {

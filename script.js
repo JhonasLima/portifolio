@@ -162,7 +162,7 @@ var sectionConhecimento = document.querySelector('.conhecimentos')
 var msgHover = document.getElementById('msgHover')
 
 sectionConhecimento.addEventListener('mouseover', function(event) {
-    msgHover.innerHTML = 'Abrir/Fechar'
+    msgHover.innerHTML = 'Click para Abrir/Fechar<br> seção Conhecimentos'
     msgHover.style.left = event.clientX + 'px'
     msgHover.style.top = event.clientY + 10 + 'px'
     msgHover.style.display = 'block'
