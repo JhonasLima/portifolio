@@ -25,7 +25,7 @@ function clickMenuFlutuante() { /*Menu*/
 }
 
 /*Codigo para manter a o botão menu na tela quando rolar a pagina*/
-function elementoVisivel(el){
+function elementoVisivel(el) {
     const rect = el.getBoundingClientRect()
 
     return (
@@ -37,18 +37,18 @@ function elementoVisivel(el){
 }
 
 
-function elementoInvisivel(){
+function elementoInvisivel() {
     var elemento = document.querySelector("#divLimite")
     let icon = document.querySelector("#iconMenu")
-    if(!elementoVisivel(elemento)){
+    if (!elementoVisivel(elemento)) {
         botaoFlutuante.style.display = 'flex'
         menuHeader.style.display = 'none'
         botaoFlutuante.classList.add('transicaoBtnFlutuante')
         icon.innerHTML = 'Menu'
-        setTimeout(function(){
+        setTimeout(function () {
             botaoFlutuante.style.scale = '1'
         }, 1)
-        
+
         /*menu.style.top = '36%'
         menu.style.right = '5%'
         menu.style.position = 'fixed'
@@ -74,20 +74,20 @@ window.addEventListener('scroll', elementoInvisivel)
 /*-------------------------------------------------------------------------*/
 
 function clickImg() {
-    if(imgLogo.style.scale == 1.6){
+    if (imgLogo.style.scale == 1.6) {
         imgLogo.style.scale = 1
-        imgLogo.style. transform = 'translate(0)'
+        imgLogo.style.transform = 'translate(0)'
 
         imgLogo.classList.add('blockClick')
         imgLogo.addEventListener('transitionend', function () {
             imgLogo.classList.remove('blockClick')
-        }, { once:true })
+        }, { once: true })
 
-        setTimeout(function(){
+        setTimeout(function () {
             nomePerfil.style.scale = 1
         }, 500)
 
-        setTimeout(function(){
+        setTimeout(function () {
             iconMenu.style.scale = 1
         }, 900)
 
@@ -101,7 +101,7 @@ function clickImg() {
         imgLogo.classList.add('blockClick')
         imgLogo.addEventListener('transitionend', function () {
             imgLogo.classList.remove('blockClick')
-        }, { once:true })
+        }, { once: true })
 
     }
 
@@ -157,6 +157,20 @@ function clickCard() {
     })
 }
 
+var sectionConhecimento = document.querySelector('.conhecimentos')
+var msgHover = document.getElementById('msgHover')
+
+sectionConhecimento.addEventListener('mouseover', function(event) {
+    msgHover.innerHTML = 'Abrir/Fechar'
+    msgHover.style.left = event.clientX + 'px'
+    msgHover.style.top = event.clientY + 10 + 'px'
+    msgHover.style.display = 'block'
+})
+
+sectionConhecimento.addEventListener('mouseout', function(){
+    msgHover.style.display = 'none'
+})
+
 /*-----------------------------Projetos----------------*/
 
 var projetos = [
@@ -177,7 +191,7 @@ var projetos = [
 
 var indice = 0
 
-window.addEventListener('load', function(){
+window.addEventListener('load', function () {
     adicionar()
 })
 
@@ -204,12 +218,12 @@ function btnPassar() {
 
     /* efeito */
     efeitoBtn.classList.add('transicaoBtn')
-    setTimeout(function(){
+    setTimeout(function () {
         efeitoBtn.classList.remove('transicaoBtn')
     }, 150)
 
     return adicionar()
-    
+
 }
 
 function btnVoltar() {
@@ -219,12 +233,12 @@ function btnVoltar() {
     if (indice > 0) {
         indice--
     } else {
-        indice = projetos.length -1 
+        indice = projetos.length - 1
     }
 
     /* efeito */
     efeitoBtn.classList.add('transicaoBtn')
-    setTimeout(function(){
+    setTimeout(function () {
         efeitoBtn.classList.remove('transicaoBtn')
     }, 150)
 

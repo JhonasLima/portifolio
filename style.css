@@ -201,11 +201,22 @@ section.perfil {
 
 /*------------- Conhecimentos -------------*/
 
-section.conhecimentos {
+.conhecimentos {
     margin: 2px 10px 0px 10px;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.6);
     border-radius: 15px;
+    cursor: pointer;
 }
+
+.msgHover {
+    position: fixed;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.687);
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    transition: all 0.1s;
+  }
 
 .containerCard {
     display: flex;
@@ -401,14 +412,18 @@ h1 {
 
 footer {
     width: auto;
+    margin-top: 30px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     background-image: linear-gradient(to bottom, #4907ad 10%, #120329);
+    color: white;
 }
 
 .logoFooter{
     width: clamp(400px, 50%, 900px);
-    margin: 10px 0px 10px 0px;
+    margin: 10px 0px 40px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -421,6 +436,12 @@ footer {
     margin: 0px 30px 0px 30px;
     background: none;
     border: none;
+    transition: scale 0.6s;
+}
+
+.botaoFooter:hover {
+    scale: 1.2;
+    transition: scale 0.7s;
 }
 
 .botaoFooter>img {
@@ -429,4 +450,15 @@ footer {
     object-fit: cover;
     border-radius: 10%;
     box-shadow: 0px 0px 5px black;
+}
+
+
+.legendaRedes {
+    font-size: clamp(0.9em, 1em, 1.2em);
+    font-weight: bolder;
+    text-shadow: 2px 2px 2px black;
+}
+
+.textoRodape {
+    font-size: 0.8em;
 }
