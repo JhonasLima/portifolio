@@ -144,13 +144,13 @@ function clickCard() {
 
         } else {
             elemento.style.display = 'none'
-            msgHover.style.display = 'none'
             containerCard.style.flexDirection = 'row'
 
             document.getElementById('conhecimentos').scrollIntoView({ behavior: "smooth", block: "center" })
 
             setTimeout(function () {
 
+                msgHover.style.display = 'none'
                 elemento.style.opacity = 0
 
             }, 500)
