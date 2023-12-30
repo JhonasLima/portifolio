@@ -308,6 +308,20 @@ p {
     pointer-events: none;
 }
 
+/*Img carregamento da pagina*/
+
+#loadingImg{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#loadingImg.loaded{
+    display: none;
+}
+
+
 /*---------------------Projetos---------------------*/
 
 section.projetos {
