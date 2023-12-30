@@ -13,7 +13,7 @@
 
 <body>
     <header>
-        <nav class="container-header">
+        <nav class="container-header" id="container-header">
             <div class="logo">
                 <div><img src="imagens/foto-logo.png" id="imgLogo" alt="Foto" onclick="clickImg()"></img></div>
                 <div>
@@ -26,20 +26,20 @@
             <div class="container-menu containerMenuHeader" id="containerMenuHeader">
                 <div class="menu menuHeader" id="menuHeader">
                     <ul>
-                        <li><a href="#"><span class="material-symbols-outlined">
+                        <li><a href="#container-header"><span class="material-symbols-outlined">
                                     home
                                 </span>INICIO</a></li>
-                        <li><a href="#"><span class="material-symbols-outlined">
+                        <li><a href="#" onclick="focoSection(event, 'perfil')"><span class="material-symbols-outlined">
                                     person
                                 </span>SOBRE MIM</a></li>
-                        <li><a href="#">
+                        <li><a href="#" onclick="focoSection(event, 'conhecimentos')">
                                 <span class="material-symbols-outlined">
                                     menu_book
                                 </span>CONHECIMENTOS</a></li>
-                        <li><a href="#"><span class="material-symbols-outlined">
+                        <li><a href="#" onclick="focoSection(event, 'projetos')"><span class="material-symbols-outlined">
                                     handyman
                                 </span>PROJETOS</a></li>
-                        <li><a href="#"><span class="material-symbols-outlined">
+                        <li><a href="#" onclick="focoSection(event, 'legendaRedes')"><span class="material-symbols-outlined">
                                     alternate_email
                                 </span>CONTATOS</a></li>
                     </ul>
@@ -55,20 +55,20 @@
     <div class="container-menu containerMenuFlutuante" id="containerMenuFlutuante">
         <div class="menu menuFlutuante" id="menuFlutuante">
             <ul>
-                <li><a href="#"><span class="material-symbols-outlined">
+                <li><a href="#" onclick="focoSection(container-header)"><span class="material-symbols-outlined">
                             home
                         </span>INICIO</a></li>
-                <li><a href="#"><span class="material-symbols-outlined">
+                <li><a href="#" onclick="focoSection(event, 'perfil')"><span class="material-symbols-outlined">
                             person
                         </span>SOBRE MIM</a></li>
-                <li><a href="#">
+                <li><a href="#" onclick="focoSection(event, 'conhecimentos')">
                         <span class="material-symbols-outlined">
                             menu_book
                         </span>CONHECIMENTOS</a></li>
-                <li><a href="#"><span class="material-symbols-outlined">
+                <li><a href="#" onclick="focoSection(event, 'projetos')"><span class="material-symbols-outlined">
                             handyman
                         </span>PROJETOS</a></li>
-                <li><a href="#"><span class="material-symbols-outlined">
+                <li><a href="#" onclick="focoSection(event, 'legendaRedes')"><span class="material-symbols-outlined">
                             alternate_email
                         </span>CONTATOS</a></li>
             </ul>
@@ -77,7 +77,7 @@
 
     <main id="main">
 
-        <section class="perfil">
+        <section class="perfil" id="perfil">
             <p>Olá, meu nome é <strong>Jhonas de Lima Barbosa</strong>, tenho 29 anos, atualmente moro na cidade de
                 Cianorte-PR e estou a procura da minha <strong>primeira oportunidade</strong> como Desenvolvedor Web.
                 Sou formado em Análise e Desenvolvimento de Sistemas pela Unipar.</p>
@@ -145,7 +145,7 @@
 
         </section>
 
-        <section class="projetos">
+        <section class="projetos" id="projetos">
             <div class="containerProjeto">
                 <div class="imgProjeto">
                     <img src="" alt="Imagem do projeto" class="imagemProjeto"
@@ -180,7 +180,7 @@
 
     </main>
     <footer>
-        <div class="legendaRedes">
+        <div class="legendaRedes" id="legendaRedes">
             <h1>Minhas Redes Sociais para contato.</h1>
         </div>
         <div class="logoFooter">
