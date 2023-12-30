@@ -1,11 +1,11 @@
 /*-----------------Carregamento--------------------*/
 
 window.onload = function(){
-    document.getElementById('loadingImg').classList.remove('loaded')
 
-    setTimeout(function(){
-        document.getElementById('loadingImag').classList.add('loaded')
-    }, 1)
+    var loading = document.getElementById('loading')
+
+    loading.parentNode.removeChild(loading)
+
 }
 
 /*-----------------------------Header----------------------*/
