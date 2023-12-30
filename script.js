@@ -1,11 +1,11 @@
 /*-----------------Carregamento--------------------*/
 
-window.onload = function(){
-    setTimeout(function(){
-    var loading = document.getElementById('loading')
+window.onload = function () {
+    setTimeout(function () {
+        var loading = document.getElementById('loading')
 
-    loading.parentNode.removeChild(loading)
-}, 1500)
+        loading.parentNode.removeChild(loading)
+    }, 1500)
 }
 
 /*-----------------------------Header----------------------*/
@@ -21,10 +21,16 @@ function clickMenu() { /*Menu*/
 }
 
 function focoSection(event, sectionId) {
+    iconMenuFlutuante.innerHTML = "Menu"
     event.preventDefault()
+    menuFlutuante.style.display = 'none'
     var section = document.getElementById(sectionId)
     if (section) {
         section.scrollIntoView({ behavior: "smooth", block: "center" })
+        section.classList.add('transicaoBorder')
+        setTimeout(function () {
+            section.classList.remove('transicaoBorder')
+        }, 1000)
     }
 }
 
