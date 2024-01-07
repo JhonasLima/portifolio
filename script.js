@@ -1,5 +1,5 @@
 /*-----------------Carregamento--------------------*/
-
+/*
 window.onload = function () {
     setTimeout(function () {
         var loading = document.getElementById('loading')
@@ -7,6 +7,7 @@ window.onload = function () {
         loading.parentNode.removeChild(loading)
     }, 1500)
 }
+/*
 
 /*-----------------------------Header----------------------*/
 function clickMenu() { /*Menu*/
