@@ -1,5 +1,5 @@
 /*-----------------Carregamento--------------------*/
-/*
+
 window.onload = function () {
     setTimeout(function () {
         var loading = document.getElementById('loading')
@@ -7,7 +7,7 @@ window.onload = function () {
         loading.parentNode.removeChild(loading)
     }, 1500)
 }
-/*
+
 
 /*-----------------------------Header----------------------*/
 function clickMenu() { /*Menu*/
@@ -73,16 +73,6 @@ function elementoInvisivel() {
             botaoFlutuante.style.scale = '1'
         }, 1)
 
-        /*menu.style.top = '36%'
-        menu.style.right = '5%'
-        menu.style.position = 'fixed'
-        menu.style.width = '46%'
-        
-        iconMenu.style.top = '50%'
-        iconMenu.style.right = '1%'
-        iconMenu.style.position = 'fixed'
-        iconMenu.style.width = '40px'*/
-
     } else {
         menuFlutuante.style.display = 'none'
         botaoFlutuante.classList.remove = 'transicaoBtnFlutuante'
@@ -98,6 +88,7 @@ window.addEventListener('scroll', elementoInvisivel)
 /*-------------------------------------------------------------------------*/
 
 function clickImg() {
+
     if (imgLogo.style.scale == 1.6) {
         imgLogo.style.scale = 1
         imgLogo.style.transform = 'translate(0)'
@@ -121,19 +112,15 @@ function clickImg() {
         nomePerfil.style.scale = 0
         iconMenu.style.scale = 0
         menuHeader.style.display = 'none'
-
         imgLogo.classList.add('blockClick')
         imgLogo.addEventListener('transitionend', function () {
             imgLogo.classList.remove('blockClick')
         }, { once: true })
 
+        
+
     }
 
-    /*if (imgLogo.style.width == '150px') {
-        imgLogo.style.width = '85px'
-    } else {
-        imgLogo.style.width = '150px'
-    }*/
 }
 
 /*-------------------------Conhecimentos-----------------*/
