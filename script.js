@@ -5,7 +5,7 @@ window.onload = function () {
         var loading = document.getElementById('loading')
 
         loading.parentNode.removeChild(loading)
-    }, 1500)
+    }, 1)
 }
 
 
@@ -88,36 +88,29 @@ window.addEventListener('scroll', elementoInvisivel)
 /*-------------------------------------------------------------------------*/
 
 function clickImg() {
+    let imgLogoG = document.querySelector('#imgLogoG')
+    let telaPreta = document.getElementById('telaPreta')
 
-    if (imgLogo.style.scale == 1.6) {
-        imgLogo.style.scale = 1
-        imgLogo.style.transform = 'translate(0)'
+    menuHeader.style.display = 'none'
+    iconMenu.innerHTML = "Menu"
 
-        imgLogo.classList.add('blockClick')
-        imgLogo.addEventListener('transitionend', function () {
-            imgLogo.classList.remove('blockClick')
-        }, { once: true })
-
+    if (imgLogoG.style.display == 'block') {
+        imgLogoG.style.display = 'none'
+        telaPreta.style.opacity = 0
         setTimeout(function () {
-            nomePerfil.style.scale = 1
-        }, 500)
+            telaPreta.style.display = 'none'
+        }, 1000)
 
-        setTimeout(function () {
-            iconMenu.style.scale = 1
-        }, 900)
+        document.body.style.overflow = ''
 
     } else {
-        imgLogo.style.scale = 1.6
-        imgLogo.style.transform = 'translate(100%, 10px)'
-        nomePerfil.style.scale = 0
-        iconMenu.style.scale = 0
-        menuHeader.style.display = 'none'
-        imgLogo.classList.add('blockClick')
-        imgLogo.addEventListener('transitionend', function () {
-            imgLogo.classList.remove('blockClick')
-        }, { once: true })
+        imgLogoG.style.display = 'block'
+        telaPreta.style.display = 'block'
+        setTimeout(function () {
+            telaPreta.style.opacity = 1
+        }, 1)
 
-        
+        document.body.style.overflow = 'hidden'
 
     }
 

@@ -31,7 +31,7 @@ main {
 
 header {
     width: 100vw;
-    height: auto;
+    height: min-content;
     /*box-shadow: 0px 1px 10px black;*/
 }
 
@@ -51,7 +51,7 @@ header {
     align-items: center;
 }
 
-.logo img {
+.imgLogo {
     width: clamp(70px, 20vw, 130px);
     filter: drop-shadow(1px 1px 5px rgb(0, 0, 0));
     scale: 1;
@@ -61,8 +61,17 @@ header {
     transition: scale 0.8s ease-in-out, transform 0.8s ease-in-out;
 }
 
-.logo img:hover {
+.imgLogo:hover {
     cursor: pointer;
+}
+
+#imgLogoG{
+    display: none;
+    position: absolute;
+    width: clamp(100px, 50%, 400px);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .logo h1 {
@@ -485,6 +494,17 @@ footer {
 
 .blockClick {
     pointer-events: none;
+}
+
+#telaPreta {
+    position: fixed;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 0.9s ease;
 }
 
 /*Img carregamento da pagina*/
