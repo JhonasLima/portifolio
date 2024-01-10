@@ -8,6 +8,20 @@ window.onload = function () {
     }, 1)
 }
 
+/*----------------------------Idade------------------------*/
+
+
+const dataNascimento = new Date("1993-11-08")
+var dataAtual = new Date()
+var idadeAtual = dataAtual.getFullYear() - dataNascimento.getFullYear()
+
+if( dataAtual.getMonth() < dataNascimento.getMonth || (dataAtual.getMonth() === dataNascimento.getMonth() &&
+ dataAtual.getDay() < dataNascimento.getDay())){
+    idadeAtual = idadeAtual - 1
+}
+
+var idade = document.querySelector('idade')
+console.log(idadeAtual)
 
 /*-----------------------------Header----------------------*/
 function clickMenu() { /*Menu*/
@@ -162,7 +176,7 @@ function clickCard() {
     })
 }
 
-var sectionConhecimento = document.querySelector('.conhecimentos')
+/*var sectionConhecimento = document.querySelector('.conhecimentos')
 var msgHover = document.getElementById('msgHover')
 
 sectionConhecimento.addEventListener('mouseover', function (event) {
@@ -174,7 +188,7 @@ sectionConhecimento.addEventListener('mouseover', function (event) {
 
 sectionConhecimento.addEventListener('mouseout', function () {
     msgHover.style.display = 'none'
-})
+})*/
 
 /*-----------------------------Projetos----------------*/
 
