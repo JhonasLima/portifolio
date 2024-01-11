@@ -11,10 +11,8 @@
 
 body {
     width: 100vw;
-    height: auto;
     background-image: url(imagens/fundo.jpg);
     background-size: cover;
-    /*background-image: linear-gradient(to top, #4907ad 60%, #120329);*/
     -webkit-tap-highlight-color: transparent;
 }
 
@@ -110,10 +108,10 @@ header {
 
 .containerMenuFlutuante {
     width: 160px;
-    display: flex;
+    /*display: flex;
     align-items: center;
     justify-content: center;
-    position: fixed;
+    position: fixed;*/
     z-index: 1;
 }
 
@@ -412,7 +410,7 @@ h1 {
 /* ----------- footer ---------*/
 
 footer {
-    width: auto;
+    width: clamp(400px, 50%, 900px);;
     margin-top: 30px;
     display: flex;
     flex-direction: column;

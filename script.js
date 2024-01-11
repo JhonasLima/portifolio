@@ -15,13 +15,13 @@ const dataNascimento = new Date("1993-11-08")
 var dataAtual = new Date()
 var idadeAtual = dataAtual.getFullYear() - dataNascimento.getFullYear()
 
-if( dataAtual.getMonth() < dataNascimento.getMonth || (dataAtual.getMonth() === dataNascimento.getMonth() &&
+if( dataAtual.getMonth() < dataNascimento.getMonth() || (dataAtual.getMonth() === dataNascimento.getMonth() &&
  dataAtual.getDay() < dataNascimento.getDay())){
-    idadeAtual = idadeAtual - 1
+    idadeAtual--
 }
 
-var idade = document.querySelector('idade')
-console.log(idadeAtual)
+var idade = document.querySelector('#idade')
+idade.innerHTML = idadeAtual
 
 /*-----------------------------Header----------------------*/
 function clickMenu() { /*Menu*/
