@@ -22,7 +22,6 @@ body::-webkit-scrollbar {
 
 main {
     width: clamp(360px, 50%, 980px);
-    /*410*/
     height: 100%;
     margin: auto;
 }
@@ -30,7 +29,6 @@ main {
 header {
     width: 100vw;
     height: min-content;
-    /*box-shadow: 0px 1px 10px black;*/
 }
 
 .container-header {
@@ -203,7 +201,7 @@ section.perfil {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.786);
     border: 1px solid rgba(255, 255, 255, 0.062);
     border-radius: 15px;
-    margin: 15px, 10px;
+    margin: 15px 10px;
     backdrop-filter: blur(3px);
 }
 
@@ -221,7 +219,7 @@ section.perfil {
 /*------------- Conhecimentos -------------*/
 
 .conhecimentos {
-    margin: 15px, 10px;
+    margin: 15px 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.786);
     border-radius: 15px;
     cursor: pointer;
@@ -304,12 +302,11 @@ p {
     margin: 3px;
 }
 
-
 /*---------------------Projetos---------------------*/
 
 .projetos {
     height: auto;
-    margin: 15px, 10px;
+    margin: 15px 10px;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.6);
     border-radius: 15px;
     border: 1px solid rgba(255, 255, 255, 0.062);
