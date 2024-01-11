@@ -21,7 +21,7 @@ body::-webkit-scrollbar {
 }
 
 main {
-    width: clamp(400px, 50%, 900px);
+    width: clamp(360px, 50%, 980px);
     /*410*/
     height: 100%;
     margin: auto;
@@ -34,7 +34,7 @@ header {
 }
 
 .container-header {
-    min-width: 400px;
+    min-width: 360px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -410,20 +410,19 @@ h1 {
 /* ----------- footer ---------*/
 
 footer {
-    width: clamp(400px, 50%, 900px);;
+    width: 100%;
     margin-top: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /*background-image: linear-gradient(to bottom, #4907ad 10%, #120329);*/
     color: white;
 
     backdrop-filter: blur(2px);
 }
 
 .logoFooter {
-    width: clamp(400px, 50%, 900px);
+    width: clamp(360px, 50%, 980px);
     margin: 10px 0px 40px 0px;
     display: flex;
     justify-content: center;

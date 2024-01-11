@@ -99,7 +99,7 @@ function elementoInvisivel() {
 
 window.addEventListener('scroll', elementoInvisivel)
 
-/*-------------------------------------------------------------------------*/
+/*---------------------------------IMG perfil----------------------------------------*/
 
 function clickImg() {
     let imgLogoG = document.querySelector('#imgLogoG')
