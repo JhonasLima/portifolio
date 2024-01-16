@@ -205,8 +205,9 @@ section.perfil {
     backdrop-filter: blur(3px);
 }
 
+
 .perfil>p {
-    font-family: 'Share tech';
+    font-family: 'Roboto', sans-serif;
     font-size: 1.3em;
     font-weight: bold;
     text-align: center;
@@ -337,8 +338,8 @@ p {
 
 .descricaoProjeto>p,
 h1 {
-    font-family: 'Share tech';
-    font-size: 1.3em;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.1;
     text-indent: 15px;
     padding: 10px;
 }
