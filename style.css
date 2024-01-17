@@ -61,7 +61,7 @@ header {
     cursor: pointer;
 }
 
-#imgLogoG{
+#imgLogoG {
     display: none;
     position: absolute;
     width: clamp(100px, 50%, 400px);
@@ -208,13 +208,19 @@ section.perfil {
 
 .perfil>p {
     font-family: 'Roboto', sans-serif;
-    font-size: 1.3em;
+    font-size: 1.1em;
     font-weight: bold;
     text-align: center;
     color: white;
     text-indent: 15px;
     padding: 10px;
     -webkit-text-stroke: 1px rgba(0, 0, 0, 0.089);
+}
+
+@media (min-width: 768px) {
+    .perfil>p {
+        font-size: 1.4em;
+    }
 }
 
 /*------------- Conhecimentos -------------*/
@@ -339,9 +345,21 @@ p {
 .descricaoProjeto>p,
 h1 {
     font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
     line-height: 1.1;
     text-indent: 15px;
     padding: 10px;
+}
+
+@media (min-width: 780px) {
+
+    .descricaoProjeto>p,
+    h1 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.3em;
+        line-height: 1.2;
+        
+    }
 }
 
 .navegacao {
@@ -452,9 +470,14 @@ footer {
 
 
 .legendaRedes {
-    font-size: clamp(0.9em, 1em, 1.2em);
-    font-weight: bolder;
+    font-size: 0.6em;
     text-shadow: 2px 2px 2px black;
+}
+
+@media (min-width: 780px) {
+    .legendaRedes {
+        font-size: 0.8em;
+    }
 }
 
 .textoRodape {
@@ -462,7 +485,7 @@ footer {
 }
 
 /*--------------------Transições---------------------*/
-.transicaoBorder{
+.transicaoBorder {
     scale: 1.1;
     transition: scale 0.8s;
     z-index: 1;
