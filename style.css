@@ -48,7 +48,7 @@ header {
 }
 
 .imgLogo {
-    width: clamp(70px, 18vw, 130px);
+    width: clamp(80px, 18vw, 130px);
     filter: drop-shadow(1px 1px 5px rgb(0, 0, 0));
     scale: 1;
     margin-top: 10px;
