@@ -5,7 +5,7 @@ window.onload = function () {
         var loading = document.getElementById('loading')
 
         loading.parentNode.removeChild(loading)
-    }, 1300)
+    }, 1500)
 }
 
 /*----------------------------Idade------------------------*/
