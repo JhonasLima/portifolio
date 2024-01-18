@@ -189,10 +189,12 @@ var projetos = [
         img: "imagens/ProjetoVerificadorIdade.png", nome: "Verficador de Idade", descricao: "Este projeto foi criado como parte do estudo sobre condições, repetições e manipulação de datas em JavaScript acompanhando o curso de JavaScript do CursoemVideo.", link: "https://jhonaslima.github.io/CursoJs/aula12ex/ex015/modelo.html"
     },
     {
-        img: "imagens/exercicioHoraDoDia.png", nome: "Hora do Dia", descricao: "Exercício desenvolvido para estudar o objeto Date em JavaScript. Neste exemplo, exploramos a criação de instâncias do objeto Date, obtendo informações sobre hora atual e realizando operações simples.", link: "https://jhonaslima.github.io/CursoJs/aula12ex/ex014/modelo.html"
+        img: "imagens/exercicioHoraDoDia.png", nome: "Hora do Dia", descricao: "Exercício desenvolvido para estudar o objeto Date em JavaScript. Neste exemplo, exploramos a criação de instâncias do objeto Date, obtendo informações sobre hora atual e realizando operações simples.", 
+        link: "https://jhonaslima.github.io/CursoJs/aula12ex/ex014/modelo.html"
     },
     {
-        img: "imagens/AnalisadorNumero.png", nome: "Analisador de Numeros", descricao: "Exercicio desenvolvido para estudo de funções acompanhando o curso de JavaScript do CursoemVideo", link: "https://jhonaslima.github.io/CursoJs/aula16ex/ex018/modelo.html"
+        img: "imagens/AnalisadorNumero.png", nome: "Analisador de Numeros", descricao: "Exercicio desenvolvido para estudo de funções acompanhando o curso de JavaScript do CursoemVideo", 
+        link: "https://jhonaslima.github.io/CursoJs/aula16ex/ex018/modelo.html"
     }
 ]
 
