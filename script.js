@@ -189,7 +189,10 @@ var projetos = [
         img: "imagens/ProjetoVerificadorIdade.png", nome: "Verficador de Idade", descricao: "Exercicio desenvolvido no Curso de JavaScript da Plataforma CursoemVideo.", link: "https://jhonaslima.github.io/CursoJs/aula12ex/ex015/modelo.html"
     },
     {
-        img: "imagens/ProjetoSocial.png", nome: "Projeto Midia Social", descricao: "Projeto desenvolvido com o intuido de aprender modos de trabalhar com iframe, foi desenvolvido acompanhando o curso de HTML e CSS do CursoemVideo", link: "https://jhonaslima.github.io/projeto-social/"
+        img: "imagens/exercicioHoraDoDia.png", nome: "Hora do Dia", descricao: "Exercicio desenvolvido para estudo do Objeto Date do JavaScript", link: "https://jhonaslima.github.io/CursoJs/aula12ex/ex014/modelo.html"
+    },
+    {
+        img: "imagens/AnalisadorNumero.png", nome: "Analisador de Numeros", descricao: "Exercicio desenvolvido para estudo de funções", link: "https://jhonaslima.github.io/CursoJs/aula16ex/ex018/modelo.html"
     }
 ]
 
