@@ -8,6 +8,21 @@ window.onload = function () {
     }, 1500)
 }
 
+/*----------------------------Idade------------------------*/
+
+
+const dataNascimento = new Date("1993-11-08")
+var dataAtual = new Date()
+var idadeAtual = dataAtual.getFullYear() - dataNascimento.getFullYear()
+
+if( dataAtual.getMonth() < dataNascimento.getMonth() || (dataAtual.getMonth() === dataNascimento.getMonth() &&
+ dataAtual.getDay() < dataNascimento.getDay())){
+    idadeAtual--
+}
+
+var idade = document.querySelector('#idade')
+idade.innerHTML = idadeAtual
+
 /*-----------------------------Header----------------------*/
 function clickMenu() { /*Menu*/
     let icon = document.querySelector("#iconMenu")
@@ -72,16 +87,6 @@ function elementoInvisivel() {
             botaoFlutuante.style.scale = '1'
         }, 1)
 
-        /*menu.style.top = '36%'
-        menu.style.right = '5%'
-        menu.style.position = 'fixed'
-        menu.style.width = '46%'
-        
-        iconMenu.style.top = '50%'
-        iconMenu.style.right = '1%'
-        iconMenu.style.position = 'fixed'
-        iconMenu.style.width = '40px'*/
-
     } else {
         menuFlutuante.style.display = 'none'
         botaoFlutuante.classList.remove = 'transicaoBtnFlutuante'
@@ -94,45 +99,35 @@ function elementoInvisivel() {
 
 window.addEventListener('scroll', elementoInvisivel)
 
-/*-------------------------------------------------------------------------*/
+/*---------------------------------IMG perfil----------------------------------------*/
 
 function clickImg() {
-    if (imgLogo.style.scale == 1.6) {
-        imgLogo.style.scale = 1
-        imgLogo.style.transform = 'translate(0)'
+    let imgLogoG = document.querySelector('#imgLogoG')
+    let telaPreta = document.getElementById('telaPreta')
 
-        imgLogo.classList.add('blockClick')
-        imgLogo.addEventListener('transitionend', function () {
-            imgLogo.classList.remove('blockClick')
-        }, { once: true })
+    menuHeader.style.display = 'none'
+    iconMenu.innerHTML = "Menu"
 
+    if (imgLogoG.style.display == 'block') {
+        imgLogoG.style.display = 'none'
+        telaPreta.style.opacity = 0
         setTimeout(function () {
-            nomePerfil.style.scale = 1
-        }, 500)
+            telaPreta.style.display = 'none'
+        }, 1000)
 
-        setTimeout(function () {
-            iconMenu.style.scale = 1
-        }, 900)
+        document.body.style.overflow = ''
 
     } else {
-        imgLogo.style.scale = 1.6
-        imgLogo.style.transform = 'translate(100%, 10px)'
-        nomePerfil.style.scale = 0
-        iconMenu.style.scale = 0
-        menuHeader.style.display = 'none'
+        imgLogoG.style.display = 'block'
+        telaPreta.style.display = 'block'
+        setTimeout(function () {
+            telaPreta.style.opacity = 1
+        }, 1)
 
-        imgLogo.classList.add('blockClick')
-        imgLogo.addEventListener('transitionend', function () {
-            imgLogo.classList.remove('blockClick')
-        }, { once: true })
+        document.body.style.overflow = 'hidden'
 
     }
 
-    /*if (imgLogo.style.width == '150px') {
-        imgLogo.style.width = '85px'
-    } else {
-        imgLogo.style.width = '150px'
-    }*/
 }
 
 /*-------------------------Conhecimentos-----------------*/
@@ -173,27 +168,12 @@ function clickCard() {
 
             setTimeout(function () {
 
-                msgHover.style.display = 'none'
                 elemento.style.opacity = 0
 
             }, 500)
         }
     })
 }
-
-var sectionConhecimento = document.querySelector('.conhecimentos')
-var msgHover = document.getElementById('msgHover')
-
-sectionConhecimento.addEventListener('mouseover', function (event) {
-    msgHover.innerHTML = 'Click para Abrir/Fechar<br> seção Conhecimentos'
-    msgHover.style.left = event.clientX + 'px'
-    msgHover.style.top = event.clientY + 10 + 'px'
-    msgHover.style.display = 'block'
-})
-
-sectionConhecimento.addEventListener('mouseout', function () {
-    msgHover.style.display = 'none'
-})
 
 /*-----------------------------Projetos----------------*/
 
@@ -206,10 +186,15 @@ var projetos = [
         img: "imagens/ProjetoLogin.png", nome: "Projeto Login", descricao: "Projeto desenvolvido para aprendizado, aplicando Media Query e validações simples de campos de formulário acompanhando o curso de HTML e CSS do CursoemVideo", link: "https://jhonaslima.github.io/projeto-login/index.html"
     },
     {
-        img: "imagens/ProjetoVerificadorIdade.png", nome: "Verficador de Idade", descricao: "Exercicio desenvolvido no Curso de JavaScript da Plataforma CursoemVideo.", link: "https://jhonaslima.github.io/CursoJs/aula12ex/ex015/modelo.html"
+        img: "imagens/ProjetoVerificadorIdade.png", nome: "Verficador de Idade", descricao: "Este projeto foi criado como parte do estudo sobre condições, repetições e manipulação de datas em JavaScript acompanhando o curso de JavaScript do CursoemVideo.", link: "https://jhonaslima.github.io/CursoJs/aula12ex/ex015/modelo.html"
     },
     {
-        img: "imagens/ProjetoSocial.png", nome: "Projeto Midia Social", descricao: "Projeto desenvolvido com o intuido de aprender modos de trabalhar com iframe, foi desenvolvido acompanhando o curso de HTML e CSS do CursoemVideo", link: "https://jhonaslima.github.io/projeto-social/"
+        img: "imagens/exercicioHoraDoDia.png", nome: "Hora do Dia", descricao: "Exercício desenvolvido para estudar o objeto Date em JavaScript. Neste exemplo, exploramos a criação de instâncias do objeto Date, obtendo informações sobre hora atual e realizando operações simples.", 
+        link: "https://jhonaslima.github.io/CursoJs/aula12ex/ex014/modelo.html"
+    },
+    {
+        img: "imagens/AnalisadorNumero.png", nome: "Analisador de Numeros", descricao: "Exercicio desenvolvido para estudo de funções acompanhando o curso de JavaScript do CursoemVideo", 
+        link: "https://jhonaslima.github.io/CursoJs/aula16ex/ex018/modelo.html"
     }
 ]
 
@@ -235,7 +220,6 @@ function btnPassar() {
     var efeitoBtn = document.querySelector("#btn-passar")
     if (indice < projetos.length - 1) {
         indice++
-        console.log(indice)
     } else {
         indice = 0
     }
