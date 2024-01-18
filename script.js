@@ -5,7 +5,7 @@ window.onload = function () {
         var loading = document.getElementById('loading')
 
         loading.parentNode.removeChild(loading)
-    }, 1500)
+    }, 1)
 }
 
 /*----------------------------Idade------------------------*/
@@ -168,7 +168,6 @@ function clickCard() {
 
             setTimeout(function () {
 
-                msgHover.style.display = 'none'
                 elemento.style.opacity = 0
 
             }, 500)
