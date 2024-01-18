@@ -32,21 +32,15 @@
             <div class="container-menu containerMenuHeader" id="containerMenuHeader">
                 <div class="menu menuHeader" id="menuHeader">
                     <ul>
-                        <!--<li><a href="#container-header"><span class="material-symbols-outlined">
-                                    home
-                                </span>INICIO</a></li>
-                        <li><a href="#" onclick="focoSection(event, 'perfil')"><span class="material-symbols-outlined">
-                                    person
-                                </span>SOBRE MIM</a></li></li>-->
-                        <li><a href="#" onclick="focoSection(event, 'conhecimentos')">
+                        <li onclick="focoSection(event, 'conhecimentos')"><a href="#">
                                 <span class="material-symbols-outlined">
                                     menu_book
                                 </span>CONHECIMENTOS</a>
-                        <li><a href="#" onclick="focoSection(event, 'projetos')"><span
+                        <li  onclick="focoSection(event, 'projetos')"><a href="#"><span
                                     class="material-symbols-outlined">
                                     handyman
                                 </span>PROJETOS</a></li>
-                        <li><a href="#" onclick="focoSection(event, 'legendaRedes')"><span
+                        <li onclick="focoSection(event, 'legendaRedes')"><a href="#"><span
                                     class="material-symbols-outlined">
                                     alternate_email
                                 </span>CONTATOS</a></li>
@@ -58,33 +52,33 @@
     </header>
 
     <!--Periféricos-->
+    <div id="loading">
+        <img id="loadingImg" src="imagens/gifCarregamento.gif" alt="Imagem antes do carregamento total">
+    </div>
+
     <button class="botaoFlutuante" id="botaoFlutuante" onclick="clickMenuFlutuante()">
         <span class="material-symbols-outlined" id="iconMenuFlutuante">
             menu
         </span>
     </button>
 
-    <div id="loading">
-        <img id="loadingImg" src="imagens/gifCarregamento.gif" alt="Imagem antes do carregamento total">
-    </div>
-
     <div class="container-menu containerMenuFlutuante" id="containerMenuFlutuante">
         <div class="menu menuFlutuante" id="menuFlutuante">
             <ul>
-                <li><a href="#" onclick="focoSection(container-header)"><span class="material-symbols-outlined">
+                <li onclick="focoSection(container-header)"><a href="#" ><span class="material-symbols-outlined">
                             home
                         </span>INICIO</a></li>
-                <li><a href="#" onclick="focoSection(event, 'perfil')"><span class="material-symbols-outlined">
+                <li onclick="focoSection(event, 'perfil')"><a href="#"><span class="material-symbols-outlined">
                             person
                         </span>SOBRE MIM</a></li>
-                <li><a href="#" onclick="focoSection(event, 'conhecimentos')">
+                <li onclick="focoSection(event, 'conhecimentos')"><a href="#">
                         <span class="material-symbols-outlined">
                             menu_book
                         </span>CONHECIMENTOS</a></li>
-                <li><a href="#" onclick="focoSection(event, 'projetos')"><span class="material-symbols-outlined">
+                <li onclick="focoSection(event, 'projetos')"><a href="#"><span class="material-symbols-outlined">
                             handyman
                         </span>PROJETOS</a></li>
-                <li><a href="#" onclick="focoSection(event, 'legendaRedes')"><span class="material-symbols-outlined">
+                <li onclick="focoSection(event, 'legendaRedes')"><a href="#"><span class="material-symbols-outlined">
                             alternate_email
                         </span>CONTATOS</a></li>
             </ul>
@@ -117,9 +111,11 @@
                     <div class="conteudoCard">
                         <h1>HTML 5</h1>
                         <ul>
-                            <li>Uso do HTML de forma semântica.</li>
+                            <li>Uso do HTML5 de forma semântica.</li>
                             <li>Formularios e Validações.</li>
                             <li>Criação de layouts reponsivos.</li>
+                            <li>Incorporação de Mídia</li>
+                            <li>Tabelas</li>
                         </ul>
                     </div>
                 </div>
@@ -130,11 +126,14 @@
                     <div class="conteudoCard">
                         <h1>CSS 3</h1>
                         <ul>
-                            <li>Uso de seletores.</li>
+                            <li>Box Model</li>
                             <li>Posicionamento de elementos</li>
                             <li>Personalização de Formulários</li>
-                            <li>Uso de transições</li>
-                            <li>Bom conhecimento de FlexBox e Grid.</li>
+                            <li>Uso de Transições e Transfomações</li>
+                            <li>Conhecimento de FlexBox e Grid</li>
+                            <li>Unidades e Valores Relativos</li>
+                            <li>Transparência e Sombreamento</li>
+                            <li>Layout Responsivo</li>
                         </ul>
                     </div>
                 </div>
@@ -146,14 +145,11 @@
                         <h1>JavaScript</h1>
                         <ul>
                             <li>Manipulação do DOM</li>
-                            <li>Variáveis</li>
                             <li>Tipos de Dados</li>
                             <li>Operadores</li>
-                            <li>Estruturas Condicionais</li>
-                            <li>Estruturas de Repetições</li>
+                            <li>Estruturas de Controle e Fluxo</li>
                             <li>Funções</li>
-                            <li>Arrays</li>
-                            <li>Objetos</li>
+                            <li>Objetos e Arrays</li>
                         </ul>
                     </div>
                 </div>

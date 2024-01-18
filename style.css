@@ -50,11 +50,10 @@ header {
 .imgLogo {
     width: clamp(80px, 18vw, 130px);
     filter: drop-shadow(1px 1px 5px rgb(0, 0, 0));
-    scale: 1;
     margin-top: 10px;
     z-index: 1;
 
-    transition: scale 0.8s ease-in-out, transform 0.8s ease-in-out;
+    transition: transform 0.8s ease-in-out;
 }
 
 .imgLogo:hover {
@@ -520,7 +519,7 @@ footer {
 
 .transicaoBtnFlutuante {
     scale: 0;
-    transition: scale 0.3s ease-in;
+    transition: transform 0.3s ease-in;
 }
 
 .blockClick {

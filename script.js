@@ -220,7 +220,6 @@ function btnPassar() {
     var efeitoBtn = document.querySelector("#btn-passar")
     if (indice < projetos.length - 1) {
         indice++
-        console.log(indice)
     } else {
         indice = 0
     }
