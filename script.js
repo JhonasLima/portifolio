@@ -181,16 +181,15 @@ function clickCard() {
 
 var projetos = [
     {
+        img: "imagens/ProjetoCalculadora.png", nome: "Calculadora", descricao: "Projeto desenvolvido para aprimoramento de lógica utilizando a linguagem JavaScript.", link: "https://jhonaslima.github.io/javascript/calculadora/index.html"  
+    },
+    {
         img: "imagens/ProjetoAndroid.png", nome: "Mascote Android", descricao: "Projeto android conta um pouco da história de como surgiu o mascote Android. Foi desenvolvido acompanhando o curso de HTML e CSS da plataforma CursoemVideo."
         , link: "https://jhonaslima.github.io/projeto-android/"
     },
     {
         img: "imagens/ProjetoLogin.png", nome: "Projeto Login", descricao: "Projeto desenvolvido para aprendizado, aplicando Media Query e validações simples de campos de formulário acompanhando o curso de HTML e CSS do CursoemVideo", link: "https://jhonaslima.github.io/projeto-login/index.html"
     },
-    {
-        img: "imagens/ProjetoCalculadora.png", nome: "Calculadora", descricao: "Projeto desenvolvido para aprimoramento de lógica utilizando a linguagem JavaScript.", link: "https://jhonaslima.github.io/javascript/calculadora/index.html"  
-    }
-    ,
     {
         img: "imagens/ProjetoVerificadorIdade.png", nome: "Verficador de Idade", descricao: "Este projeto foi criado como parte do estudo sobre condições, repetições e manipulação de datas em JavaScript acompanhando o curso de JavaScript do CursoemVideo.", link: "https://jhonaslima.github.io/CursoJs/aula12ex/ex015/modelo.html"
     },
