@@ -188,7 +188,7 @@ var projetos = [
         img: "imagens/ProjetoLogin.png", nome: "Projeto Login", descricao: "Projeto desenvolvido para aprendizado, aplicando Media Query e validações simples de campos de formulário acompanhando o curso de HTML e CSS do CursoemVideo", link: "https://jhonaslima.github.io/projeto-login/index.html"
     },
     {
-        img: "ProjetoCalculadora.png", nome: "Calculadora", descricao: "Projeto desenvolvido para aprimoramento de lógica utilizando a linguagem JavaScript.", link: "https://jhonaslima.github.io/javascript/calculadora/index.html"  
+        img: "imagens/ProjetoCalculadora.png", nome: "Calculadora", descricao: "Projeto desenvolvido para aprimoramento de lógica utilizando a linguagem JavaScript.", link: "https://jhonaslima.github.io/javascript/calculadora/index.html"  
     }
     ,
     {
