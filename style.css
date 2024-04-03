@@ -283,6 +283,10 @@ section.perfil {
     filter: drop-shadow(0px 0px 8px black);
 }
 
+#reactLogo {
+    filter: drop-shadow(0px 0px 3px rgba(225, 225, 225, 0.794));
+}
+
 .conteudoCard {
     display: none;
     text-align: center;
