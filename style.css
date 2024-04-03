@@ -248,6 +248,7 @@ section.perfil {
     box-shadow: 0px 0px 5px black;
     justify-content: center;
     gap: 15px;
+    flex-wrap: wrap;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 }
@@ -280,6 +281,10 @@ section.perfil {
     height: auto;
     text-align: center;
     filter: drop-shadow(0px 0px 8px black);
+}
+
+#reactLogo {
+    filter: drop-shadow(0px 0px 3px rgba(225, 225, 225, 0.794));
 }
 
 .conteudoCard {
