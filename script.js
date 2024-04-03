@@ -7,7 +7,7 @@ window.onload = function () {
 
         loading.parentNode.removeChild(loading)
         document.body.style.overflow = ''
-    }, 1)//1500
+    }, 1500)
 }
 
 /*----------------------------Idade------------------------*/
